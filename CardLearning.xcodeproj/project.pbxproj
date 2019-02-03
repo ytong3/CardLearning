@@ -12,6 +12,10 @@
 		583F0BC52205DFB700C9B934 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583F0BC32205DFB700C9B934 /* Main.storyboard */; };
 		583F0BC72205DFB800C9B934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 583F0BC62205DFB800C9B934 /* Assets.xcassets */; };
 		583F0BCA2205DFB800C9B934 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 583F0BC82205DFB800C9B934 /* LaunchScreen.storyboard */; };
+		583F0BD52205E40C00C9B934 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583F0BD42205E40C00C9B934 /* Card.swift */; };
+		583F0BD72205E41A00C9B934 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 583F0BD62205E41A00C9B934 /* Deck.swift */; };
+		58C3BF712205F45000BDB35E /* DeckCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3BF702205F45000BDB35E /* DeckCollectionViewController.swift */; };
+		58C3BF7322062F9800BDB35E /* DeckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C3BF7222062F9800BDB35E /* DeckCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		583F0BC62205DFB800C9B934 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		583F0BC92205DFB800C9B934 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		583F0BCB2205DFB800C9B934 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		583F0BD42205E40C00C9B934 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		583F0BD62205E41A00C9B934 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		58C3BF702205F45000BDB35E /* DeckCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCollectionViewController.swift; sourceTree = "<group>"; };
+		58C3BF7222062F9800BDB35E /* DeckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeckCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,9 @@
 		583F0BBE2205DFB700C9B934 /* CardLearning */ = {
 			isa = PBXGroup;
 			children = (
+				583F0BD32205E3DB00C9B934 /* Views */,
+				583F0BD22205E3D100C9B934 /* Controllers */,
+				583F0BD12205E3A900C9B934 /* Models */,
 				583F0BBF2205DFB700C9B934 /* AppDelegate.swift */,
 				583F0BC12205DFB700C9B934 /* ViewController.swift */,
 				583F0BC32205DFB700C9B934 /* Main.storyboard */,
@@ -62,6 +73,31 @@
 				583F0BCB2205DFB800C9B934 /* Info.plist */,
 			);
 			path = CardLearning;
+			sourceTree = "<group>";
+		};
+		583F0BD12205E3A900C9B934 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				583F0BD42205E40C00C9B934 /* Card.swift */,
+				583F0BD62205E41A00C9B934 /* Deck.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		583F0BD22205E3D100C9B934 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				58C3BF702205F45000BDB35E /* DeckCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		583F0BD32205E3DB00C9B934 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				58C3BF7222062F9800BDB35E /* DeckCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58C3BF7322062F9800BDB35E /* DeckCell.swift in Sources */,
+				583F0BD72205E41A00C9B934 /* Deck.swift in Sources */,
 				583F0BC22205DFB700C9B934 /* ViewController.swift in Sources */,
+				583F0BD52205E40C00C9B934 /* Card.swift in Sources */,
+				58C3BF712205F45000BDB35E /* DeckCollectionViewController.swift in Sources */,
 				583F0BC02205DFB700C9B934 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
